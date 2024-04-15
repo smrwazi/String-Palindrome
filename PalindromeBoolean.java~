@@ -1,0 +1,23 @@
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args) {
+        Scanner x = new Scanner(System.in);
+        String m = x.next();
+        int i = 0,j = m.length()-1;
+        boolean isP = true;
+        while(i<j){
+            if(m.charAt(i)!=m.charAt(j)){
+                isP = false;
+                
+            }
+            i++;
+            j--;
+        }
+        if (isP){
+            System.out.print("Palindrome");
+        }
+        else{
+            System.out.print("Not Palindrome");
+        }
+    }
+}
